@@ -1,0 +1,7 @@
+{
+  "version": "M12",
+  "scope": "Target, timing, and engineered-feature contract",
+  "status": "PASS",
+  "source_artifact_sha256": "39b80da353867475cf002640a4dcb60d59752b68972a267ef2edce7dc5c259bd",
+  "sanitization": "Only the dashboard-consumed status and source hash are retained; excluded-data paths and non-runtime evidence are omitted."
+}

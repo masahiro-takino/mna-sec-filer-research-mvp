@@ -1,0 +1,7 @@
+{
+  "version": "M12",
+  "scope": "Multi-seed fitting, frozen selection, and missingness stress",
+  "status": "PASS",
+  "source_artifact_sha256": "d75c3af3c621d76465f17d60103e4e3b143de38db9f908014aac54525414555f",
+  "sanitization": "Only the dashboard-consumed status and source hash are retained; model paths and non-runtime evidence are omitted."
+}

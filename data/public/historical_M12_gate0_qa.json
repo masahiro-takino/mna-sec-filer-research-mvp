@@ -1,0 +1,7 @@
+{
+  "version": "M12",
+  "scope": "Gate 0 M11 reproduction and starting-state freeze",
+  "status": "PASS",
+  "source_artifact_sha256": "8508382e8ccf178356ef2bf77b86e07e056239f7c64663aacbeac78fa90500d9",
+  "sanitization": "Only the dashboard-consumed status and source hash are retained; local paths and non-runtime evidence are omitted."
+}

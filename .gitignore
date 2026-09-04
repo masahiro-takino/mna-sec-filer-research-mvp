@@ -1,0 +1,28 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+Thumbs.db
+
+# Credentials and local configuration
+.env
+.env.*
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Licensed or issuer-level research data must remain local-only.
+data/private/
+*.parquet
+*.zip
+*.7z
+*.tar
+*.gz
+
+# Local smoke-test evidence
+smoke-test-*.log
+*.pid

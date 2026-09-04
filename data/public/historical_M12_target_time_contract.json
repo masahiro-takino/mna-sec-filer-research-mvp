@@ -1,0 +1,63 @@
+{
+  "version": "M12",
+  "status": "FROZEN_AFTER_GATE_1_BEFORE_MODEL_EVALUATION",
+  "target_name": "M&A-announcement SEC Filer/participant within the next 92 days",
+  "exact_definition": "For the selected issuer feature row, label 1 iff the earliest locally linked DMA/FactSet SEC-filer announcement for that row's valid CIK is strictly after information_available_date (snapshot_ts) and on or before information_available_date + 92 calendar days; otherwise 0.",
+  "fiscal_period_date": "datadate",
+  "information_available_date": "snapshot_ts = max(datadate + 90 days, rdq) in the protected source panel",
+  "forecast_window_start": "snapshot_ts, exclusive",
+  "forecast_window_end": "snapshot_ts + 92 calendar days, inclusive",
+  "selected_feature_row": "M11 deterministic GVKEY/fiscal-reporting-quarter row selection, unchanged except the label is no longer max-aggregated",
+  "issuer_label": "event-recomputed selected-row label; selected-row source label is retained as an exact reproduction check",
+  "m11_sensitivity_label": "maximum row label across GVKEY/datadate calendar quarter, retained only as a sensitivity comparator",
+  "event_source_path": "inputs/dma_corpus_metadata_with_factset_id.csv",
+  "event_source_sha256": "a667a40b52fa52b1d46ef2e906151d636e341dc3575bb69ad1831cb28dd5047f",
+  "event_rows": 7929,
+  "source_panel_path": "inputs/mna_full_panel_model_ready.parquet",
+  "source_panel_sha256": "5e369f79d8ea6c33b94f06caea3d046ac4ab523feb9f2d848f14d6daf12699ec",
+  "source_row_label_event_reproduction_rate": 1.0,
+  "fiscal_cohort_limit": "Primary reused-quarter evaluation remains a fiscal reporting cohort. Issuers in one cohort can have different information and forecast-window dates; it is not a same-date portfolio ranking.",
+  "common_asof_feasible": true,
+  "common_asof_design": "Quarter-end common cutoffs; latest deterministic financial row whose snapshot_ts is on or before the cutoff; labels over the identical subsequent 92-day window.",
+  "common_asof_audit": [
+    {
+      "calendar_quarter": "2018Q4",
+      "common_as_of_date": "2018-12-31 00:00:00",
+      "rows": 26670,
+      "positives": 81,
+      "base_rate": 0.003037120359955006,
+      "all_information_dates_on_or_before_cutoff": true,
+      "unique_gvkey": true,
+      "minimum_information_date": "2000-04-30 00:00:00",
+      "maximum_information_date": "2018-12-31 00:00:00"
+    },
+    {
+      "calendar_quarter": "2019Q2",
+      "common_as_of_date": "2019-06-30 00:00:00",
+      "rows": 27321,
+      "positives": 98,
+      "base_rate": 0.0035869843709966692,
+      "all_information_dates_on_or_before_cutoff": true,
+      "unique_gvkey": true,
+      "minimum_information_date": "2000-04-30 00:00:00",
+      "maximum_information_date": "2019-06-29 00:00:00"
+    },
+    {
+      "calendar_quarter": "2020Q2",
+      "common_as_of_date": "2020-06-30 00:00:00",
+      "rows": 28228,
+      "positives": 107,
+      "base_rate": 0.003790562561995182,
+      "all_information_dates_on_or_before_cutoff": true,
+      "unique_gvkey": true,
+      "minimum_information_date": "2000-04-30 00:00:00",
+      "maximum_information_date": "2020-06-30 00:00:00"
+    }
+  ],
+  "target_role_exclusions": [
+    "Target",
+    "Acquirer",
+    "Seller",
+    "Buyer"
+  ]
+}

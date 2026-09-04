@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "selected_model": "M12Q_quarterly_only_full_population_median",
+  "selection_reason": "Only candidate passing every frozen gate.",
+  "candidate_results": [
+    {
+      "candidate": "M12V_values_only_full_population_median",
+      "passed": false,
+      "checks": {
+        "top50_each_quarter": true,
+        "top50_vs_scale_two_of_three_and_total": true,
+        "top50_vs_missingness_two_of_three_and_total": true,
+        "non_size_pr_above_base_each_quarter": true,
+        "median_pairwise_rank_spearman_each_quarter": true,
+        "median_top50_overlap_each_quarter": false,
+        "no_forced_selection": true
+      },
+      "weighted_ensemble_pr_auc": 0.0446879489468082,
+      "weighted_ensemble_roc_auc": 0.8479949518588483,
+      "top50_candidate": {
+        "2018Q4": 4,
+        "2019Q2": 5,
+        "2020Q2": 3
+      },
+      "top50_scale": {
+        "2018Q4": 3,
+        "2019Q2": 1,
+        "2020Q2": 0
+      },
+      "top50_missingness": {
+        "2018Q4": 3,
+        "2019Q2": 2,
+        "2020Q2": 0
+      }
+    },
+    {
+      "candidate": "M12Q_quarterly_only_full_population_median",
+      "passed": true,
+      "checks": {
+        "top50_each_quarter": true,
+        "top50_vs_scale_two_of_three_and_total": true,
+        "top50_vs_missingness_two_of_three_and_total": true,
+        "non_size_pr_above_base_each_quarter": true,
+        "median_pairwise_rank_spearman_each_quarter": true,
+        "median_top50_overlap_each_quarter": true,
+        "no_forced_selection": true
+      },
+      "weighted_ensemble_pr_auc": 0.04502943442051696,
+      "weighted_ensemble_roc_auc": 0.8484339217647097,
+      "top50_candidate": {
+        "2018Q4": 3,
+        "2019Q2": 5,
+        "2020Q2": 5
+      },
+      "top50_scale": {
+        "2018Q4": 3,
+        "2019Q2": 2,
+        "2020Q2": 1
+      },
+      "top50_missingness": {
+        "2018Q4": 3,
+        "2019Q2": 2,
+        "2020Q2": 0
+      }
+    }
+  ],
+  "weighted_metrics": {
+    "M12V_values_only_full_population_median": {
+      "pr_auc": 0.0446879489468082,
+      "roc_auc": 0.8479949518588483
+    },
+    "M12Q_quarterly_only_full_population_median": {
+      "pr_auc": 0.04502943442051696,
+      "roc_auc": 0.8484339217647097
+    }
+  },
+  "statistically_indistinguishable": false,
+  "indifference_tolerance": 0.001,
+  "no_forced_selection": true,
+  "preregistration_sha256": "eaa47ed4b5d90e9f7769b1f9b84a20b80c649b1759060da29e1cf9983796d21a"
+}

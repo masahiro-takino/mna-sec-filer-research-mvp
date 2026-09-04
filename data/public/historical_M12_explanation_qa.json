@@ -1,0 +1,7 @@
+{
+  "version": "M12",
+  "scope": "Exact ensemble SHAP, grouping, and business explanation",
+  "status": "PASS",
+  "source_artifact_sha256": "97411e599789637a6b9bc8a4fa7d475aef20df524dbeca6a4eeef68565bb3403",
+  "sanitization": "Only the dashboard-consumed status and source hash are retained; model and excluded-data paths are omitted."
+}
