@@ -26,3 +26,13 @@ data/private/
 # Local smoke-test evidence
 smoke-test-*.log
 *.pid
+
+# Model binaries and fresh local browser evidence are never checkpoint content.
+*.joblib
+*.pkl
+*.pickle
+*.onnx
+*.h5
+*.pt
+*.pth
+local-qa/

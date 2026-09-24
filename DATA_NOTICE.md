@@ -6,7 +6,7 @@ The source project states that licensed, proprietary, credential-bearing, and la
 
 Accordingly, this repository includes only:
 
-1. original dashboard code and documentation;
+1. reviewed dashboard code, presentation-layer tests, and documentation;
 2. small aggregate model-selection, evaluation, robustness, and profile summaries;
 3. feature/theme/Scale display contracts and QA summaries; and
 4. one approved static dashboard preview.
@@ -15,9 +15,11 @@ It excludes raw or near-raw licensed data and issuer-level derived vendor data f
 
 ## Required local-only files
 
-Place every file below in `data/private/` only after an authorized data owner confirms that local use is permitted. Git ignores this directory.
+Place required files below in `data/private/` only after an authorized data owner confirms that local use is permitted. Git ignores this directory. Ten files are required by the current review UI; the previously listed theme-SHAP dependency remains excluded but is no longer read by this UI.
 
 For temporary authorized testing, `M12_PRIVATE_DATA_DIR` may point to a separate directory containing the same files. The default remains the repository-local ignored directory.
+
+`M12_M0_FORENSIC_PATH` can point to the exact separately authorized M0 CSV without copying it into the M12 directory. There is no source-directory auto-discovery. Public summaries and the dictionary are always read from `data/public/`.
 
 | File | Bytes | SHA-256 | Classification and reason excluded |
 |---|---:|---|---|
@@ -31,7 +33,14 @@ For temporary authorized testing, `M12_PRIVATE_DATA_DIR` may point to a separate
 | `historical_M12_label_conflict_reconciliation.csv` | 10,555 | `04ee73dc7b396e7ca1128404920d0cc11eb627bdc7425f6f7d7f942f0858c639` | Issuer/event-window reconciliation; rights uncertain. |
 | `historical_M11_M0_SPX_75_feature_forensic.csv` | 85,140 | `a48bb88aeab012e1298eaf4c624b86963731b1028dcb6e4351d23c25476c4022` | Named issuer near-raw Compustat values; licensed-data risk. |
 
-The application verifies only file presence. Before review, compare the supplied files with the hashes above.
+Two additional files are required locally, but are not copied to Git:
+
+- `historical_M12_preregistration_contract.json`: exact selected ordered-feature contract. The complete research contract remains local rather than republishing unrelated provenance or workflow metadata.
+- `historical_M12_selected_ensemble_model_manifest.json`: exact saved five-seed baseline and ordered-feature hash. It contains fitted numerical baselines and model provenance; no restricted values are copied into code or public data.
+
+Their sizes and SHA-256 hashes are recorded as excluded dependencies in `MANIFEST.csv`. No model binary is required. The old theme-SHAP Parquet remains excluded and is optional/unused by the revised UI.
+
+The application checks required file presence, then validates selected-candidate identity, cohort, ordered-feature hash, exact seed membership, dictionary scale membership, and saved SHAP/score reconciliation. Before review, compare supplied file bytes with the dependency hashes. Missing files produce a code-only notice; malformed or incompatible artifacts fail closed without fallback calculations.
 
 ## Explicitly prohibited from this repository
 
@@ -40,4 +49,8 @@ The application verifies only file presence. Before review, compare the supplied
 - M0–M11 outputs except the single local-only M0 forensic dependency listed above.
 - Credentials, tokens, cookies, browser profiles, `.env`, or `.streamlit/secrets.toml`.
 
-Until the nine local-only files are separately authorized and supplied, the remote repository is code-only and the interactive dashboard is not fully reproducible from Git alone.
+Until the ten current local-only dependencies are separately authorized and supplied, the interactive dashboard is not fully reproducible from Git alone. Runtime use and screenshots remain local; private visibility is not permission to upload issuer-level values or derived outputs.
+
+## Historical evidence is not scientific approval
+
+Existing aggregate files are preserved historical snapshots. Later evidence-closure review withdrew unqualified leakage-safe and GS-ready claims because timing, label maturity, and negative-label coverage remain unresolved. Numerical reconciliation and UI tests do not resolve those issues. This code checkpoint grants no new scientific approval or sharing authorization.
