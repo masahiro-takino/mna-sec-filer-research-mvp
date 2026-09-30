@@ -10,9 +10,11 @@ Accordingly, this repository includes only:
 2. small aggregate model-selection, evaluation, robustness, and profile summaries;
 3. feature/theme/Scale display contracts and QA summaries;
 4. one previously approved static dashboard preview; and
-5. six explicitly reviewed, sanitized presentation captures under `assets/screenshots/`, subject to the narrow boundary below.
+5. six explicitly reviewed, presentation-safe captures under `assets/screenshots/`, subject to the narrow, screenshot-specific boundary below.
 
-It excludes raw or near-raw licensed data and issuer-level derived vendor data for which sharing rights remain uncertain. No replacement scientific evidence was fabricated.
+It excludes raw or near-raw licensed data and full issuer-level derived output files for which sharing rights remain uncertain. The authorized presentation exception allows selected model-derived values in flattened screenshots, not the underlying files or raw financial values. No replacement scientific evidence was fabricated.
+
+Financial data source: Compustat North America via WRDS. Event data comes from the project's licensed/authorized historical sources. Displayed model rankings and SHAP analyses are author-generated research outputs. Naming a source does not extend the source-data license or establish unlimited redistribution rights.
 
 ## Required local-only files
 
@@ -50,19 +52,24 @@ The application checks required file presence, then validates selected-candidate
 - M0–M11 outputs except the single local-only M0 forensic dependency listed above.
 - Credentials, tokens, cookies, browser profiles, `.env`, or `.streamlit/secrets.toml`.
 
-Until the ten current local-only dependencies are separately authorized and supplied, the interactive dashboard is not fully reproducible from Git alone. Unsanitized runtime output and screenshots remain local; private visibility is not permission to upload issuer-level values or derived outputs.
+Until the ten current local-only dependencies are separately authorized and supplied, the interactive dashboard is not fully reproducible from Git alone. Runtime tables, downloadable issuer-level outputs and screenshots outside the specific reviewed exception below remain local. Private visibility is not general permission to upload data or derived outputs.
 
 ## Narrow screenshot-gallery disclosure boundary
 
-The six PNGs added on September 30, 2026 are labeled sanitized presentation captures of the current reviewed UI. Their inclusion does not change the exclusions above or authorize disclosure of any additional issuer-level data.
+The six gallery PNGs were revised under the September 30, 2026 presentation authorization. That authorization permits selected existing company identities and model-derived outputs to make the research workflow legible. It supersedes the earlier gallery's broader visual masking for these six captures only. It does not authorize new science, redistribution of full issuer-level files, or disclosure of reconstructable licensed source data.
 
-- Overview, Business View and Company Comparison withhold issuer identities, ranks/Top X%, scores, issuer dates/windows, financial and imputed values, missingness cells, ranked driver concepts/values, fitted baselines and numerical reconciliation details. SHAP bar geometry, signed-net markers, numeric axes and tooltips are omitted, not merely anonymized.
-- Historical Population shows only the already-included aggregate findings; the protected M0/SPX issuer-level table is omitted.
-- Beyond Size & Robustness retains already-included aggregate diagnostics with their historical-validation caveats.
-- Dictionary & Scientific Audit retains public definitions, target text and qualified saved-check statuses. Local evidence paths are withheld, and issuer-level reconciliation/named-company details remain unexposed.
-- Individual ex-post outcomes remain OFF. No synthetic predictions, financial values, replacement SHAP bars or scientific evidence were fabricated.
+| View | Permitted presentation content | Content withheld |
+|---|---|---|
+| Overview | Actual saved company names/tickers, original ranks, percentile/Top X%, uncalibrated score, and signed Scale/Non-scale SHAP contributions | Raw financial/model-input values, complete downloadable issuer tables and local paths |
+| Business View | Actual selected-company identity, rank, percentile, score, information date/forecast window, driver names and signed SHAP contribution | Raw and imputed financial values, reconstructable source-value tables and downloads |
+| Beyond Size & Robustness | Existing aggregate candidate/comparator metrics, missingness/frequency diagnostics and seed stability, with caveats | Any raw issuer-level model inputs or full output files |
+| Company Comparison | Selected actual names, rankings, timing and comparable derived model/SHAP outputs | Raw financial/model-input values and complete issuer-level comparison files |
+| Historical Population & M0 | Existing descriptive aggregate findings, explicitly separated from live prediction validation | Protected M0/SPX raw issuer financial values and downloadable forensic tables |
+| Dictionary & Scientific Audit | Already-approved feature definitions/mnemonics, target text, contract structure and qualified saved-check statuses | Local evidence paths, raw financial values and complete reconciliation/output files |
 
-Sanitization is performed before image capture in an isolated local display adapter; the reviewed application, stored research results and code-only entry point are unchanged. Only flattened raster captures are included, with no private source tables, browser state, local adapter, DOM dumps, credentials or image metadata. The prior approved `assets/dashboard_preview.png` is retained unchanged and grants no broader display permission.
+Raw vendor financial values must not appear in any gallery image. Raw vendor field names are restricted to the already-approved feature dictionary context; company driver views use descriptive names rather than exposing source tables. The display adapter suppresses downloads and raw/imputed model-input columns before capture, and only a bounded selection of existing model-derived outputs is displayed. Individual ex-post outcomes remain OFF. No synthetic company predictions, financial values, replacement SHAP bars or scientific evidence are fabricated.
+
+This is a screenshot-only display transformation. The reviewed application, stored research results and code-only entry point are unchanged. Only flattened raster captures are included, with no private source tables, browser state, local adapter, DOM dumps, credentials or image metadata. The prior approved `assets/dashboard_preview.png` is retained unchanged and grants no broader display permission. Reuse outside this private research-review repository requires its own authorization.
 
 ## Historical evidence is not scientific approval
 
