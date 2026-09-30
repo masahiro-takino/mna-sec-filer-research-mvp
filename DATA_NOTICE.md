@@ -8,8 +8,9 @@ Accordingly, this repository includes only:
 
 1. reviewed dashboard code, presentation-layer tests, and documentation;
 2. small aggregate model-selection, evaluation, robustness, and profile summaries;
-3. feature/theme/Scale display contracts and QA summaries; and
-4. one approved static dashboard preview.
+3. feature/theme/Scale display contracts and QA summaries;
+4. one previously approved static dashboard preview; and
+5. six explicitly reviewed, sanitized presentation captures under `assets/screenshots/`, subject to the narrow boundary below.
 
 It excludes raw or near-raw licensed data and issuer-level derived vendor data for which sharing rights remain uncertain. No replacement scientific evidence was fabricated.
 
@@ -49,7 +50,19 @@ The application checks required file presence, then validates selected-candidate
 - M0–M11 outputs except the single local-only M0 forensic dependency listed above.
 - Credentials, tokens, cookies, browser profiles, `.env`, or `.streamlit/secrets.toml`.
 
-Until the ten current local-only dependencies are separately authorized and supplied, the interactive dashboard is not fully reproducible from Git alone. Runtime use and screenshots remain local; private visibility is not permission to upload issuer-level values or derived outputs.
+Until the ten current local-only dependencies are separately authorized and supplied, the interactive dashboard is not fully reproducible from Git alone. Unsanitized runtime output and screenshots remain local; private visibility is not permission to upload issuer-level values or derived outputs.
+
+## Narrow screenshot-gallery disclosure boundary
+
+The six PNGs added on September 30, 2026 are labeled sanitized presentation captures of the current reviewed UI. Their inclusion does not change the exclusions above or authorize disclosure of any additional issuer-level data.
+
+- Overview, Business View and Company Comparison withhold issuer identities, ranks/Top X%, scores, issuer dates/windows, financial and imputed values, missingness cells, ranked driver concepts/values, fitted baselines and numerical reconciliation details. SHAP bar geometry, signed-net markers, numeric axes and tooltips are omitted, not merely anonymized.
+- Historical Population shows only the already-included aggregate findings; the protected M0/SPX issuer-level table is omitted.
+- Beyond Size & Robustness retains already-included aggregate diagnostics with their historical-validation caveats.
+- Dictionary & Scientific Audit retains public definitions, target text and qualified saved-check statuses. Local evidence paths are withheld, and issuer-level reconciliation/named-company details remain unexposed.
+- Individual ex-post outcomes remain OFF. No synthetic predictions, financial values, replacement SHAP bars or scientific evidence were fabricated.
+
+Sanitization is performed before image capture in an isolated local display adapter; the reviewed application, stored research results and code-only entry point are unchanged. Only flattened raster captures are included, with no private source tables, browser state, local adapter, DOM dumps, credentials or image metadata. The prior approved `assets/dashboard_preview.png` is retained unchanged and grants no broader display permission.
 
 ## Historical evidence is not scientific approval
 

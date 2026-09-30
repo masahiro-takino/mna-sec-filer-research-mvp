@@ -4,6 +4,29 @@ This private repository is a code checkpoint of a collaborative historical M&A r
 
 **Historical research prototype. Timing and label-coverage validation remain under review. Ranking scores are uncalibrated.** This checkpoint is not a full-data backup, scientific approval, or authorization to redistribute licensed data. Earlier saved PASS/GS-ready statuses describe historical engineering checks, not current scientific certification.
 
+## Dashboard screenshots
+
+Selected views from the current reviewed historical research dashboard are shown below. The screenshots illustrate the screening and explainability workflow; stored ranking scores are uncalibrated and historical timing / label-coverage validation remains under review.
+
+**Sanitized presentation captures, not newly shareable issuer-level results.** Identities, issuer-specific ranks/scores/dates, financial values, ranked drivers, fitted baselines and SHAP bar geometry are withheld where present. No synthetic company predictions or replacement numerical results were invented. Existing approved aggregate diagnostics and dictionary definitions remain visible. Click an image to inspect its full-resolution view.
+
+<table>
+<tr>
+<td width="50%"><a href="assets/screenshots/01_overview.png"><img src="assets/screenshots/01_overview.png" width="100%" alt="Sanitized Overview: ranked screening controls and withheld issuer-level contributions"></a><br>Overview — ranked issuer screening and signed Scale / Non-scale contributions</td>
+<td width="50%"><a href="assets/screenshots/02_business_view.png"><img src="assets/screenshots/02_business_view.png" width="100%" alt="Sanitized Business View: ranking and forecast field labels with private values withheld"></a><br>Business View — company-level ranking, forecast window and financial drivers</td>
+</tr>
+<tr>
+<td width="50%"><a href="assets/screenshots/03_beyond_size_robustness.png"><img src="assets/screenshots/03_beyond_size_robustness.png" width="100%" alt="Historical aggregate comparator and robustness diagnostics with validation caveat"></a><br>Beyond Size &amp; Robustness — scale, missingness and stability diagnostics</td>
+<td width="50%"><a href="assets/screenshots/04_company_comparison.png"><img src="assets/screenshots/04_company_comparison.png" width="100%" alt="Sanitized comparison matrix with public feature definitions and issuer values withheld"></a><br>Company Comparison — cross-company financial and SHAP comparison</td>
+</tr>
+<tr>
+<td width="50%"><a href="assets/screenshots/05_historical_population.png"><img src="assets/screenshots/05_historical_population.png" width="100%" alt="Historical descriptive population findings; private M0 issuer detail omitted"></a><br>Historical Population &amp; M0 — descriptive historical population evidence</td>
+<td width="50%"><a href="assets/screenshots/06_dictionary_scientific_audit.png"><img src="assets/screenshots/06_dictionary_scientific_audit.png" width="100%" alt="Feature dictionary, target definition and saved engineering-check caveats"></a><br>Dictionary &amp; Scientific Audit — feature definitions, target contract and engineering audit trail</td>
+</tr>
+</table>
+
+All six captures use the reviewed Overview-first UI, dark theme and individual ex-post outcomes OFF. Sensitive views demonstrate the interface rather than disclose the hidden results. See [DATA_NOTICE.md](DATA_NOTICE.md) and the screenshot section of [CHECKPOINT_QA.md](CHECKPOINT_QA.md) for the exact disclosure boundary. The older `assets/dashboard_preview.png` remains unchanged for historical continuity; it is not the current reviewed gallery.
+
 ## Reviewed interactions
 
 - Overview defaults to the stored Top 15; Top 25/50/100, full-list pagination, and company/ticker/GVKEY search are available.
@@ -64,4 +87,4 @@ This packages existing collaborative research, not a claim of sole authorship of
 
 `app.py` routes to `dashboard/historical_m12_review_ui.py`; `dashboard/m12_review_ui_helpers.py` retains the reviewed numerical and identity logic. `dashboard/sharing_paths.py` isolates public/private routing. Tests live in `tests/`. [MANIFEST.csv](MANIFEST.csv) inventories tracked files and separately records excluded local dependencies. Existing aggregate evidence and the approved preview are unchanged. No new license or redistribution permission is granted.
 
-Included-file sizes and SHA-256 hashes use Git's LF-normalized text bytes (binary bytes unchanged), so Windows checkout line endings do not change their meaning. Excluded dependencies and `source_sha256` use exact original file bytes. The manifest excludes its own recursive hash.
+Included-file sizes and SHA-256 hashes use Git's LF-normalized text bytes (binary bytes unchanged), so Windows checkout line endings do not change their meaning. Excluded dependencies and `source_sha256` use exact original file bytes. The manifest excludes its own recursive hash. The six new gallery PNGs are explicitly sanitized captures, not byte-identical copies of private source outputs; their original-source hash field is therefore blank.

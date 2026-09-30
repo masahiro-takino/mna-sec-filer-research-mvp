@@ -37,3 +37,26 @@ An initial sandboxed test attempt could not access pytest's temporary directory.
 This is a code checkpoint, not a complete data backup or scientific approval. Timing, historical vintage, label maturity and negative-label coverage remain unresolved; scores are uncalibrated. Existing public aggregate files preserve historical diagnostics rather than certifying current validity. Runtime authorization is distinct from redistribution permission, including for a private GitHub repository.
 
 Interactive use still requires the ten authorized local dependencies in `DATA_NOTICE.md`. Without them the app deliberately displays only the code-only notice. Tests are specific to the installed Windows/Edge environment; no deployment or cross-platform certification is claimed. A broad query in the native virtualized company picker may retain its scroll position; an exact company search narrows the list.
+
+## Sanitized screenshot gallery — September 30, 2026
+
+This presentation-only follow-up begins at clean local/remote `main` commit `0461854ebe783932c8f7924fd2dedf1db7b1be73` in the independently verified PRIVATE repository. The earlier code-checkpoint evidence above is retained; its prior counts are not substituted for fresh tests.
+
+The unchanged source `dashboard/historical_m12_review_ui.py` was launched on loopback only with telemetry disabled and the dark theme. All six required destinations were observed in the current reviewed navigation, not the old prototype. An isolated local capture adapter executes that unchanged source and intercepts display arguments only: it replaces restricted cells/text and the entire issuer-SHAP visualization before rendering, disables capture-view downloads, and adds an explicit sanitization banner. The actual application, data, model state, scientific claims and sharing-copy runtime code are unchanged. The capture adapter and local evidence logs are not Git content.
+
+Viewport: 1600 x 1200; coherent application-only crop: 1520 x 1105. Each image is a bounded viewport, not an extremely tall full-page export. Browser chrome and the app toolbar are outside the crop. The browser's JPEG captures are converted to PNG without rescaling or pixel alteration; PNG metadata is omitted. Six final PNGs were opened and visually inspected individually. All use outcomes OFF and visible historical-validation caveats.
+
+| Image | Disclosure review |
+|---|---|
+| `01_overview.png` | Table headers and workflow retained; all issuer cells, selection identity/rank and SHAP geometry withheld. |
+| `02_business_view.png` | Rank/Top X%, score and date/window field labels retained; identities, numbers, ranked driver concepts/values and all SHAP geometry withheld. |
+| `03_beyond_size_robustness.png` | Already-included aggregate comparator evidence retained with explicit historical caveat; no issuer data. |
+| `04_company_comparison.png` | Public feature definitions/units retained; selected identities, company headers/cells and date/rank metadata withheld. |
+| `05_historical_population.png` | Already-included aggregate historical findings retained; private M0/SPX table omitted. |
+| `06_dictionary_scientific_audit.png` | Public target/dictionary and qualified saved statuses retained; local path hidden, issuer audit contents unexposed. |
+
+Fresh unchanged sharing-repository tests: **17 passed / 42 skipped** without private data; **58 passed / 1 skipped** with authorized local saved artifacts; zero failures/errors in either run. The preservation-manifest test is skipped because one historical external prompt is now absent; no replacement manifest or weakened test was supplied. Independent before/after checks confirmed all 38 available historical/source referents and seven sharing code/test/old-preview files remained byte-identical. The unavailable external prompt prevents claiming all 39 prior referents were verified. Detailed command/stdout/stderr/JUnit and preservation records remain local.
+
+Publication review checks only the explicit six PNGs and four documentation/manifest files. It excludes private directories, raw/vendor files, binaries, archives, notebook output, credentials, absolute local paths and files over 25 MB. The manifest retains all excluded dependency records and the self-referential exception, using normalized text bytes and exact PNG bytes. README uses relative image links with full-resolution click-through; the older approved preview remains tracked and unchanged. GitHub privacy and remote-main checks must be repeated before and after the normal non-force push.
+
+No training, inference, new SHAP, WRDS, acquisition, research-data mutation, deployment or scientific-validation change is part of this gallery. Streamlit guidance informed the loopback/theme setup; browser/computer-use guidance informed viewport capture and visual review. This is a sanitized presentation checkpoint, not a full-data backup or scientific approval.
