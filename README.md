@@ -7,7 +7,7 @@ The model ranks potential **M&A-announcement SEC-filer/participant appearance in
 **Scores are uncalibrated. Historical timing and label-coverage validation remain under review.** This is a historical research prototype, not a production trading or deal-execution system, a current-market prediction service, or a scientific approval. Earlier saved PASS/GS-ready statuses describe historical engineering checks, not current scientific certification.
 
 ## Contributors
-- **Daniel Hardesty Lewis** — Original M&A Announcement model development and notebook/portfolio-selection research.
+- **Daniel Hardesty Lewis** — Original M&A Announcement model development and notebook/portfolio-selection research. See the original GitHub here: https://github.com/dhardestylewis/MnA_Prediction
 - **Masahiro Takino** — M&A business application, SHAP-based explainability, and dashboard design and development.
 
 ## What the reviewer can inspect
